@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Final_Project_Deliverable (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Final_Project_Deliverable</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7613,7 +7613,7 @@ I also think it's a great dataset to make analyses on referee calls, whether ski
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [163]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7642,7 +7642,7 @@ I also think it's a great dataset to make analyses on referee calls, whether ski
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [164]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">kaggle</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>
@@ -7682,7 +7682,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [165]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">"dataset/database.sqlite"</span><span class="p">)</span>
@@ -7759,7 +7759,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">match_db</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'home_team_api_id'</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">'home_team_goal'</span><span class="p">)[[</span><span class="s1">'home_team_goal'</span><span class="p">]],</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">'Goals scored by teams when at home'</span><span class="p">)</span>
@@ -7792,7 +7792,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">match_db</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'home_team_api_id'</span><span class="p">)[[</span><span class="s1">'home_team_goal'</span><span class="p">,</span><span class="s1">'away_team_goal'</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -7808,7 +7808,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[167]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>TtestResult(statistic=np.float64(4.350588355363938), pvalue=np.float64(1.867155302072682e-05), df=np.int64(298))</pre>
 </div>
@@ -7822,7 +7822,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since the p-value is 1.86e^5, which is much less than 0.05, we can reject the null hypothesis, showing that there is a correlation between team side and goals, likely that being at home means you score more.</p>
+<p>After usimg a TTest, the p-value is 1.86e^5, which is much less than 0.05, so we can reject the null hypothesis, showing that there is a correlation between team side and goals, likely that being at home means you score more.</p>
 </div>
 </div>
 </div>
@@ -7845,7 +7845,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">gameres</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -7870,7 +7870,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[168]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Axes: title={'center': 'Result of games for the home team'}, xlabel='Result of match', ylabel='Density'&gt;</pre>
 </div>
@@ -7889,7 +7889,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">winres</span> <span class="o">=</span> <span class="n">match_db</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'home_team_api_id'</span><span class="p">,</span> <span class="s1">'gameresult'</span><span class="p">])[</span><span class="s1">'gameresult'</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -7915,7 +7915,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[169]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(5.078239586675978e-27)</pre>
 </div>
@@ -7929,7 +7929,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since our pvalue is 5.07e^-27, which is less than 0.05, we can reject the null hypothesis, showing that there is a correlation between teamside and winning the game.</p>
+<p>Using ANOVA, we find that our pvalue is 5.07e^-27, which is less than 0.05, so we can reject the null hypothesis, showing that there is a correlation between teamside and winning the game.</p>
 <p>To see which side, I wil use a post-hoc test.</p>
 </div>
 </div>
@@ -7939,7 +7939,7 @@ Dataset URL: https://www.kaggle.com/datasets/hugomathien/soccer
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">adhoc</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">tukey_hsd</span><span class="p">(</span><span class="n">lossarray</span><span class="p">,</span> <span class="n">drawarray</span><span class="p">,</span> <span class="n">winarray</span><span class="p">)</span>
@@ -7999,7 +7999,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [171]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">playeratt_db</span><span class="p">[</span><span class="s1">'potential'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">'Potential Stat'</span><span class="p">)</span>
@@ -8032,7 +8032,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">potentialvalues</span> <span class="o">=</span> <span class="n">playeratt_db</span><span class="p">[</span><span class="s1">'potential'</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
@@ -8049,7 +8049,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[172]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>PearsonRResult(statistic=np.float64(0.2866840527575014), pvalue=np.float64(0.0))</pre>
 </div>
@@ -8063,7 +8063,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since our coefficient value is 0.28, it suggests a very weak linear relationship, so players with better finishing may not have a higher potential.</p>
+<p>Since our Pearson's coefficient value is 0.28, it suggests a very weak linear relationship, so players with better finishing may not have a higher potential.</p>
 </div>
 </div>
 </div>
@@ -8093,7 +8093,6 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 </ul>
 <p>The first question was answered earlier, it's the home team by a significant margin (about 46% chance to win a game at home).</p>
 <p>The second question will be answered by making a model based on the data, using classification to predict the winners of the UCL, between Liverpool FC and Paris Saint-Germain. I will also use the previous matches of the UCL to test the data.</p>
-<p>The third question will be answereed using linear regression.</p>
 </div>
 </div>
 </div>
@@ -8124,7 +8123,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">StratifiedKFold</span>
@@ -8153,7 +8152,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [174]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">heatmap_report</span><span class="p">(</span><span class="n">confmatrix</span><span class="p">):</span>
@@ -8173,7 +8172,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">class_report</span><span class="p">(</span><span class="n">classrep</span><span class="p">):</span>
@@ -8194,7 +8193,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [220]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_stackedbar</span><span class="p">(</span><span class="n">confmatrix</span><span class="p">):</span>
@@ -8231,7 +8230,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [177]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">gamereschange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -8264,7 +8263,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [178]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">match_db</span><span class="p">[[</span><span class="s1">'home_team_api_id'</span><span class="p">,</span> <span class="s1">'away_team_api_id'</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'home_team_api_id'</span><span class="p">,</span> <span class="s1">'away_team_api_id'</span><span class="p">])</span>
@@ -8290,7 +8289,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [179]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -8315,7 +8314,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [180]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
@@ -8380,7 +8379,7 @@ Score:  [0.43348569 0.43805629 0.44382968 0.45428296 0.43551492]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [181]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">heatmap_report</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
@@ -8407,7 +8406,7 @@ Score:  [0.43348569 0.43805629 0.44382968 0.45428296 0.43551492]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [182]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">class_report</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -8445,7 +8444,7 @@ Score:  [0.43348569 0.43805629 0.44382968 0.45428296 0.43551492]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [183]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">match_db</span><span class="p">[</span><span class="s1">'home_advantage'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># since the table is ordered by home teams, i can just make this 1</span>
@@ -8471,7 +8470,7 @@ Score:  [0.43348569 0.43805629 0.44382968 0.45428296 0.43551492]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [184]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">betters</span> <span class="o">=</span> <span class="p">[</span>
@@ -8512,7 +8511,7 @@ Score:  [0.43348569 0.43805629 0.44382968 0.45428296 0.43551492]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [359]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'home_advantage'</span><span class="p">,</span><span class="s1">'home_team_api_id'</span><span class="p">,</span> <span class="s1">'away_team_api_id'</span><span class="p">,</span> <span class="s1">'B365H'</span><span class="p">,</span> <span class="s1">'B365D'</span><span class="p">,</span> <span class="s1">'B365A'</span><span class="p">,</span> <span class="s1">'BWH'</span><span class="p">,</span> <span class="s1">'BWD'</span><span class="p">,</span> <span class="s1">'BWA'</span><span class="p">,</span> <span class="s1">'IWH'</span><span class="p">,</span> <span class="s1">'IWD'</span><span class="p">,</span> <span class="s1">'IWA'</span><span class="p">,</span> <span class="s1">'LBH'</span><span class="p">,</span> <span class="s1">'LBD'</span><span class="p">,</span> <span class="s1">'LBA'</span><span class="p">,</span> <span class="s1">'PSH'</span><span class="p">,</span> <span class="s1">'PSD'</span><span class="p">,</span> <span class="s1">'PSA'</span><span class="p">,</span> <span class="s1">'WHH'</span><span class="p">,</span> <span class="s1">'WHD'</span><span class="p">,</span> <span class="s1">'WHA'</span><span class="p">,</span> <span class="s1">'SJH'</span><span class="p">,</span> <span class="s1">'SJD'</span><span class="p">,</span> <span class="s1">'SJA'</span><span class="p">,</span> <span class="s1">'VCH'</span><span class="p">,</span> <span class="s1">'VCD'</span><span class="p">,</span> <span class="s1">'VCA'</span><span class="p">,</span> <span class="s1">'GBH'</span><span class="p">,</span> <span class="s1">'GBD'</span><span class="p">,</span> <span class="s1">'GBA'</span><span class="p">,</span> <span class="s1">'BSH'</span><span class="p">,</span> <span class="s1">'BSD'</span><span class="p">,</span> <span class="s1">'BSA'</span><span class="p">]</span>
@@ -8591,7 +8590,7 @@ Score:  [0.50084195 0.49747414 0.50613423 0.5045717  0.49470645]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [362]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">heatmap_report</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
@@ -8618,7 +8617,7 @@ Score:  [0.50084195 0.49747414 0.50613423 0.5045717  0.49470645]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [363]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">class_report</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -8656,7 +8655,7 @@ Score:  [0.50084195 0.49747414 0.50613423 0.5045717  0.49470645]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xgboost</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xgb</span>
@@ -8722,7 +8721,7 @@ Score:  [0.51166707 0.51647823 0.52658167 0.51106833 0.51323388]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [206]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">heatmap_report</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
@@ -8749,7 +8748,7 @@ Score:  [0.51166707 0.51647823 0.52658167 0.51106833 0.51323388]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [207]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">class_report</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -8798,7 +8797,7 @@ Score:  [0.51166707 0.51647823 0.52658167 0.51106833 0.51323388]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [360]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">VotingClassifier</span>
@@ -8868,7 +8867,7 @@ Score:  [0.49627135 0.49747414 0.50541256 0.5060154  0.49831569]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [356]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">heatmap_report</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
@@ -8895,7 +8894,7 @@ Score:  [0.49627135 0.49747414 0.50541256 0.5060154  0.49831569]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [357]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">class_report</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -8945,7 +8944,7 @@ Score:  [0.49627135 0.49747414 0.50541256 0.5060154  0.49831569]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [361]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"RandomForestClassifier, with no betting odds data"</span><span class="p">)</span>
@@ -9015,7 +9014,7 @@ Score:  [0.49627135 0.49747414 0.50541256 0.5060154  0.49831569]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [328]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'home_advantage'</span><span class="p">,</span><span class="s1">'home_team_api_id'</span><span class="p">,</span> <span class="s1">'away_team_api_id'</span><span class="p">,</span> <span class="s1">'B365H'</span><span class="p">,</span> <span class="s1">'B365A'</span><span class="p">,</span> <span class="s1">'BWH'</span><span class="p">,</span> <span class="s1">'BWA'</span><span class="p">,</span> <span class="s1">'IWH'</span><span class="p">,</span> <span class="s1">'IWA'</span><span class="p">,</span> <span class="s1">'LBH'</span><span class="p">,</span> <span class="s1">'LBA'</span><span class="p">,</span> <span class="s1">'PSH'</span><span class="p">,</span> <span class="s1">'PSA'</span><span class="p">,</span> <span class="s1">'WHH'</span><span class="p">,</span> <span class="s1">'WHA'</span><span class="p">,</span> <span class="s1">'SJH'</span><span class="p">,</span> <span class="s1">'SJA'</span><span class="p">,</span> <span class="s1">'VCH'</span><span class="p">,</span> <span class="s1">'VCA'</span><span class="p">,</span> <span class="s1">'GBH'</span><span class="p">,</span> <span class="s1">'GBA'</span><span class="p">,</span> <span class="s1">'BSH'</span><span class="p">,</span> <span class="s1">'BSA'</span><span class="p">]</span>
@@ -9081,7 +9080,7 @@ Score:  [0.71050935 0.68590777 0.70428894 0.6923573  0.70493389]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [329]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ensemble_nodraws_cf</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -9152,7 +9151,7 @@ Score:  [0.71050935 0.68590777 0.70428894 0.6923573  0.70493389]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [287]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">match_db</span><span class="p">[</span><span class="s1">'high_scoring'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">match_db</span><span class="p">[</span><span class="s1">'home_team_goal'</span><span class="p">]</span> <span class="o">+</span> <span class="n">match_db</span><span class="p">[</span><span class="s1">'away_team_goal'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">2</span>
@@ -9180,7 +9179,7 @@ Score:  [0.71050935 0.68590777 0.70428894 0.6923573  0.70493389]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [288]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -9242,7 +9241,7 @@ Score:  [0.52586    0.53476064 0.53403897 0.5392204  0.530077  ]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [289]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -9275,7 +9274,7 @@ Score:  [0.52586    0.53476064 0.53403897 0.5392204  0.530077  ]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [290]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">goals_cf</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -9358,7 +9357,7 @@ Score:  [0.52586    0.53476064 0.53403897 0.5392204  0.530077  ]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [309]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">match_db</span><span class="p">[</span><span class="s1">'home_scored'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">match_db</span><span class="p">[</span><span class="s1">'home_team_goal'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
@@ -9386,7 +9385,7 @@ Score:  [0.52586    0.53476064 0.53403897 0.5392204  0.530077  ]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [310]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -9447,7 +9446,7 @@ Score:  [0.77219148 0.77579986 0.77195093 0.77237729 0.77189605]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [311]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -9480,7 +9479,7 @@ Score:  [0.77219148 0.77579986 0.77195093 0.77237729 0.77189605]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [312]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nohome_cf</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -9563,7 +9562,7 @@ Score:  [0.77219148 0.77579986 0.77195093 0.77237729 0.77189605]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [317]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">match_db</span><span class="p">[</span><span class="s1">'goals'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">match_db</span><span class="p">[</span><span class="s1">'home_team_goal'</span><span class="p">]</span> <span class="o">+</span> <span class="n">match_db</span><span class="p">[</span><span class="s1">'away_team_goal'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span>
@@ -9580,7 +9579,7 @@ Score:  [0.77219148 0.77579986 0.77195093 0.77237729 0.77189605]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [314]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -9641,7 +9640,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [319]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -9674,7 +9673,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [325]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nogoals_cf</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -9809,7 +9808,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [333]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">input</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([{</span>
@@ -9846,22 +9845,16 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [345]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">home_team_ids</span> <span class="o">=</span> <span class="n">match_db</span><span class="p">[</span><span class="s1">'home_team_api_id'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 <span class="n">away_team_ids</span> <span class="o">=</span> <span class="n">match_db</span><span class="p">[</span><span class="s1">'away_team_api_id'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">home_team_ids</span><span class="p">:</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">==</span> <span class="mi">1601</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">continue</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="nb">input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'home_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="nb">input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'home_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">away_team_ids</span><span class="p">:</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">==</span> <span class="mi">1601</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">continue</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="nb">input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'away_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="nb">input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'away_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="nb">input</span><span class="p">[</span><span class="s1">'home_team_api_id_9847'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># PSG</span>
 <span class="nb">input</span><span class="p">[</span><span class="s1">'away_team_api_id_9825'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># Arsenal</span>
@@ -9878,7 +9871,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [352]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">input</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
@@ -9930,7 +9923,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [364]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">final_input</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([{</span>
@@ -9960,15 +9953,9 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">home_team_ids</span><span class="p">:</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">==</span> <span class="mi">1601</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">continue</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="n">final_input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'home_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">final_input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'home_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">away_team_ids</span><span class="p">:</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">==</span> <span class="mi">1601</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">continue</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="n">final_input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'away_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">final_input</span><span class="p">[</span><span class="sa">f</span><span class="s1">'away_team_api_id_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="n">final_input</span><span class="p">[</span><span class="s1">'home_team_api_id_9847'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># PSG</span>
 <span class="n">final_input</span><span class="p">[</span><span class="s1">'away_team_api_id_8636'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># Inter</span>
@@ -9996,7 +9983,7 @@ Score:  [0.92350253 0.92302141 0.92350253 0.92372474 0.92348412]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [366]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">final_input</span> <span class="o">=</span> <span class="n">final_input</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
